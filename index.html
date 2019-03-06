@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with coded decorative elements</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Huddle | Landing page with coded decorative elements</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Try It Free
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
+  <header class="hero is-full-height">
+    <div class="container">
+    <nav class="navbar" role="navigation">
+      <div class="navbar-logo">
+        <a class="navbar-item">
+          <img src="images/logo.svg" height="35px" alt="Huddle">
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a class="button">Try It Free</a>
+      </div>
+    </nav>
+  </div>
+    <div class="hero-body">
+      <div class="container is-centered">
+        <img src="images/illustration-mockups.svg" height="400px" alt="hero illustration">
+        <h1 class="">Build The Community Your Fans Will Love</h1>
+        <h2 class="">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+          Create connections with your users as you engage in genuine discussion.</h2>
+        <a class="button">Get Started For Free</a>
+      </div>
+    </div>
+  </header>
+  <section>
   Flowing Conversations
 
   You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
@@ -39,13 +47,13 @@
 
   It takes no time at all to integrate Huddle with your app's authentication solution. This means, once 
   signed in to your app, your users can start chatting immediately.
-
+  </section>
   Try It Free
 
   Fully featured 30-day free trial - no credit card required
 
   Get Started For Free
-
+  <footer>
   &copy; Copyright 2019 Huddle. All rights reserved.
 
   About Us
@@ -62,12 +70,6 @@
   send you spam or pass on your email address
 
   Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
   </footer>
 </body>
 </html>
