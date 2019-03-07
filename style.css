@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
+
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-size: 100%;
+  font-size: 18px;
   font-weight: normal;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -30,38 +34,106 @@ img,embed,iframe,object,video {
 }
 
 .container {
-    margin: 0 auto;
-    position: relative;
-  }
+  margin: 0 auto;
+  position: relative;
+}
   
-  @media screen and (min-width: 1088px) {
-    .container {
-      max-width: 960px;
-      width: 960px;
-    }
+@media screen and (min-width: 1088px) {
+  .container {
+    max-width: 1440px;
+    width: 1440px;
+  }
+}
 
 .hero {
-    background-color: #f6f9fe;
+  background-color: #f6f9fe;
 }    
 
+.navbar {
+  padding: 5px;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.navbar>.container {
+  align-items: stretch;
+  display: flex;
+  min-height: 3.25rem;
+  width: 100%;
+}
+
+.navbar-logo {
+  align-items: stretch;
+  display: flex;
+  flex-shrink: 0;
+  min-height: 3.25rem;
+}
+
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;;
+}
+
+.hero-image {
+  display: inline-block;
+  max-height:  calc(50vh - 3.25rem);
+  max-width: calc(50vw - 3.25rem);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-image {
+  max-height:  auto;
+  max-width: calc(80vw - 3.25rem);
+  margin-bottom: 2rem;
+  }
+}
+
 .is-full-height {
-    min-height: calc(100vh - 3.25rem);
+  min-height: 100vh;
+}
+
+.hero-body {
+  
 }
 
 .button {
+  color: white;
+  background-color: #fe52c0;
   align-items: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 2px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   height: 2.25em;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.375em - 1px);
-  padding-left: calc(0.625em - 1px);
-  padding-right: calc(0.625em - 1px);
-  padding-top: calc(0.375em - 1px);
+  padding-bottom: calc(1.575em - 1px);
+  padding-left: calc(2em - 1px);
+  padding-right: calc(2em - 1px);
+  padding-top: calc(1.575em - 1px);
   position: relative;
   vertical-align: top;
+}
+
+.is-centered {
+  text-align: center!important;
+}
+
+.title {
+  color: #12363d;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #8f9397;
+  max-width: 650px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.50;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
