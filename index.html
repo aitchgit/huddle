@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Huddle | Landing page with coded decorative elements</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero is-full-height">    
+  <div class="bg-square">
+  <header class="hero is-full-height">       
     <nav class="navbar" role="navigation">
       <div class="container">
         <div class="navbar-logo">
@@ -32,28 +32,35 @@
         <a class="button">Get Started For Free</a>
       </div>
     </div>
+  
   </header>
   <section>
-  Flowing Conversations
-
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Grow Together
-
-  Generate meaningful discussions with your audience and build a strong, loyal community. Think of 
-  the insightful conversations you miss out on with a feedback form. 
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, once 
-  signed in to your app, your users can start chatting immediately.
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half section-adjust">
+          <img src="images/illustration-your-users.svg" class="hero-image" alt="hero illustration">
+        </div>
+        <div class="column is-half">
+          <h2 class="title">Flowing Conversations</h2>
+          <p class="subtitle">You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+            just-in-time loading for a more natural flow.</p>
+          <h2 class="title">Grow Together</h2>
+          <p class="subtitle">Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of
+            the insightful conversations you miss out on with a feedback form. </p>
+          <h2 class="title">Your Users</h2>
+          <p class="subtitle">It takes no time at all to integrate Huddle with your app's authentication solution. This
+            means, once
+            signed in to your app, your users can start chatting immediately.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  Try It Free
-
-  Fully featured 30-day free trial - no credit card required
-
-  Get Started For Free
+  <div class="call-to-action is-centered">
+    <h2 class="title">Try It Free</h2>
+    <p>Fully featured 30-day free trial - no credit card required</p>
+    <a class="button">Get Started For Free</a>
+  </div>
   <footer>
   &copy; Copyright 2019 Huddle. All rights reserved.
 
@@ -72,5 +79,6 @@
 
   Subscribe
   </footer>
+</div>
 </body>
 </html>
